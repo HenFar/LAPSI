@@ -47,3 +47,5 @@ for i = 1:sz    % for cycle for each frequency mode, 1, 2, 3, ..., sz
 end
 
 residue = x(:) - sum(AVG_IMFs, 2);
+
+%% untested
