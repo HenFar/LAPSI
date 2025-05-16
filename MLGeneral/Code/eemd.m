@@ -16,7 +16,7 @@ P = 10*log10(V);    % variance in dBW
 
 w = wgn(length(x), 1, P);   % wgn noise
 
-[imf0, ~] = emd(x + w);
+[imf0, ~] = emd(x + w');
 
 sz = size(imf0, 2); % amount of columns, i.e. number of modes
 
@@ -24,7 +24,7 @@ IMFs = zeros(length(x), sz, L);  % matrix for IMF storage
 
 for k = 1:L
     w_k = wgn(length(x), 1, P);
-    [imf_k, ~] = emd(x + w_k);  % in the imf_k matrix, each col is an imf
+    [imf_k, ~] = emd(x + w_k');  % in the imf_k matrix, each col is an imf
     num_modes = size(imf_k, 2); % number of modes
     if num_modes < sz
         imf_k(:, num_modes + 1:sz) = 0; % if there are less modes than imf0
@@ -48,4 +48,4 @@ end
 
 residue = x(:) - sum(AVG_IMFs, 2);
 
-% untested
+% working up to the 3rd IMF
