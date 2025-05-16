@@ -48,4 +48,4 @@ end
 
 residue = x(:) - sum(AVG_IMFs, 2);
 
-%% untested
+% untested
