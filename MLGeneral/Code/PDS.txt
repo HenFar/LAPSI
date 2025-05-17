@@ -1,0 +1,9 @@
+Este ficheiro serve para escrever o atual ponto de situação do projecto. 
+
+Sempre que alguma coisa de interesse for feita, vamos escrevendo abaixo o que conseguimos fazer e o que falta fazer a seguir, de forma a
+estarmos sempre os dois na mesma página.
+
+17/05
+- Algoritmo EEMD está feito no ficheiro eemd.m e está funcional de acordo com o teste realizado no ficheiro test.m. 
+- Precisamos agora de ler os sinais na pasta mit-bih que foram os mesmos usados no paper, no MATLAB, para podermos começar a reproduzir
+resultados.
