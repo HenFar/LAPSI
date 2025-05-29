@@ -7,3 +7,8 @@ estarmos sempre os dois na mesma página.
 - Algoritmo EEMD está feito no ficheiro eemd.m e está funcional de acordo com o teste realizado no ficheiro test.m. 
 - Precisamos agora de ler os sinais na pasta mit-bih que foram os mesmos usados no paper, no MATLAB, para podermos começar a reproduzir
 resultados.
+
+
+29/05
+- Adicionados 4 ficheiros com sinais ECG da MIT-BIH, 2 de NSR e 2 de VF. Encontram-se na pasta ECGs, divididos em pastas próprias.
+- Precisamos agora de lhes aplicar o que se pretende, isto é, os algoritmos EMD e EEMD, de forma a obter os resultados do paper.
