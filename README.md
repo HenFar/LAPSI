@@ -19,5 +19,6 @@ detailed in comments inside the function itself and in the paper.
 
 ## MIT-BIH Database
 The database used throughout the paper was the one distributed by MIT-BIH and is accessible through the following link:
-[MIT-BIH](https://archive.physionet.org/cgi-bin/atm/ATM)
+[MIT-BIH](https://archive.physionet.org/cgi-bin/atm/ATM).
+
 4 files have been selected for work, 2 recording NSR and 2 recording VF events. 
