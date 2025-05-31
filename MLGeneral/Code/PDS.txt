@@ -15,3 +15,9 @@ resultados.
 
 30/05
 - Adicionei o ficheiro main.m em que introduzi os sinais da mit-bih (o primeiro até agora) e que manda fora os imfs.
+
+31/05
+- Peguei no código em main.m e transferi para uma função ecg_plots(x) própria que faz os plots diretamente. Esta função pede a
+localização do ficheiro .mat e um nome para identificar. É possível que demore a processar, como está agora dá print a 24 plots.
+- O ficheiro main.m passa a ser unicamente para dar plot.
+- Primeiros plots do paper (pág. 5) feitos.
