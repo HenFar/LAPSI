@@ -1,11 +1,10 @@
 function [AVG_IMFs, residue] = eemd(x, L, r, n)
 
-% function for the implementation of an EEMD (Ensemble Empirical Mode
+% Function for the implementation of an EEMD (Ensemble Empirical Mode
 % Decomposition) in MATLAB. 
-% the function requires an initial signal x, an ensemble size L and the 
+% The function requires an initial signal x, an ensemble size L and the 
 % chosen ratio for the white guassian noise's standard deviation relative 
 % to the x signal's.
-
 % x - original signal
 % L - ensemble size, i.e. number of emds averaged
 % r - ratio of the wgn noise's standard deviation
@@ -59,17 +58,17 @@ residue = x(:) - sum(AVG_IMFs, 2);
 
 % should add an automatic print for the first 3 IMFs and residue
 
-t = linspace(0, 1, length(x));
-
-figure, plot(t, x); % plot original ecg signal
-title('ECG');
-
-legendList = {'IMF1', 'IMF2', 'IMF3', 'IMF4', 'IMF5', 'IMF6', 'IMF7', 'IMF8'};
-
-for k = 1:n     % plot number of IMFs requested by variable n
-    figure, plot(t, AVG_IMFs(:, k));
-    title(sprintf('%s', legendList{k}));
-end
-
-figure, plot(t, residue);   % plot residue for the whole eemd
-title('residue');
+% t = linspace(0, 1, length(x));
+% 
+% figure, plot(t, x); % plot original ecg signal
+% title('ECG');
+% 
+% legendList = {'IMF1', 'IMF2', 'IMF3', 'IMF4', 'IMF5', 'IMF6', 'IMF7', 'IMF8'};
+% 
+% for k = 1:n     % plot number of IMFs requested by variable n
+%     figure, plot(t, AVG_IMFs(:, k));
+%     title(sprintf('%s', legendList{k}));
+% end
+% 
+% figure, plot(t, residue);   % plot residue for the whole eemd
+% title('residue');
