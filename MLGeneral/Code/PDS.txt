@@ -12,3 +12,6 @@ resultados.
 29/05
 - Adicionados 4 ficheiros com sinais ECG da MIT-BIH, 2 de NSR e 2 de VF. Encontram-se na pasta ECGs, divididos em pastas próprias.
 - Precisamos agora de lhes aplicar o que se pretende, isto é, os algoritmos EMD e EEMD, de forma a obter os resultados do paper.
+
+30/05
+- Adicionei o ficheiro main.m em que introduzi os sinais da mit-bih (o primeiro até agora) e que manda fora os imfs.
