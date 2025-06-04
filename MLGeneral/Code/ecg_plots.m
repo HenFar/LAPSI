@@ -10,6 +10,8 @@ data = x.val;
 ecg1 = data(1, :);
 ecg2 = data(2, :);
 
+% page 5 plots
+
 N = length(ecg1);
 Fs = 128;
 t = (0:(N-1))' ./ Fs;
@@ -94,3 +96,4 @@ plot(t, residue2eemd, 'LineWidth', 1);
 ylabel('Residue');
 xlabel('Time (s)');
 grid on;
+
