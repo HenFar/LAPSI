@@ -13,7 +13,7 @@ ecg2 = data(2, :);
 % page 5 plots
 
 N = length(ecg1);
-Fs = 128;
+Fs = 360;
 t = (0:(N-1))' ./ Fs;
 
 figure;
@@ -26,6 +26,7 @@ plot(t, ecg2); title(sprintf('ECG %s-2', file_name));
 
 [imfs2emd, residue2emd] = emd(ecg2);
 [imfs2eemd, residue2eemd] = eemd(ecg2, 200, 0.2, 3);
+
 
 figure; % plot 1
 for k = 1:3
